@@ -1,0 +1,13 @@
+/* styles/Blog.module.css */
+.blogPage { padding: 4rem 1.5rem; }
+.container { max-width: 900px; margin: 0 auto; }
+.title, .subtitle { text-align: center; }
+.title { font-size: 3rem; margin-bottom: 1rem; }
+.subtitle { font-size: 1.2rem; color: var(--secondary-text); margin: 0 auto 4rem auto; }
+.postList { display: grid; gap: 2rem; }
+.postCard { display: block; background-color: #1a1a1a; padding: 2rem; border-radius: 8px; text-decoration: none; border: 1px solid transparent; transition: border-color 0.3s ease; }
+.postCard:hover { border-color: var(--primary-blue); }
+.postDate { font-size: 0.9rem; color: var(--secondary-text); }
+.postTitle { font-size: 1.8rem; margin: 0.5rem 0; color: var(--light-text); }
+.postExcerpt { color: var(--secondary-text); }
+.readMore { color: var(--primary-blue); font-weight: bold; margin-top: 1rem; display: inline-block; }

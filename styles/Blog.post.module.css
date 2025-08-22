@@ -1,0 +1,7 @@
+/* styles/Blog.post.module.css */
+.blogPost { padding: 4rem 1.5rem; }
+.container { max-width: 800px; margin: 0 auto; }
+.postTitle { font-size: 3rem; line-height: 1.2; margin-bottom: 1rem; }
+.postDate { font-size: 1rem; color: var(--secondary-text); margin-bottom: 2rem; }
+.postContent { font-size: 1.1rem; line-height: 1.8; color: var(--secondary-text); }
+.postContent strong { color: var(--light-text); }

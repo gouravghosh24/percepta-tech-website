@@ -1,0 +1,27 @@
+/* styles/Navbar.module.css - FINAL */
+.header {
+    padding: 1.5rem 0;
+    border-bottom: 1px solid var(--border-color);
+    position: sticky;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    z-index: 100;
+}
+.nav { display: flex; justify-content: space-between; align-items: center; }
+.logo { font-size: 1.5rem; font-weight: bold; text-decoration: none; color: var(--text-color); }
+.navLinks { list-style: none; display: flex; gap: 2rem; margin: 0; padding: 0; }
+.navLinks a { text-decoration: none; color: var(--secondary-text-color); transition: color 0.3s ease; }
+.navLinks a:hover { color: var(--primary-color); }
+.contactButton { background-color: var(--primary-color); color: var(--white-color); padding: 0.75rem 1.5rem; border-radius: 5px; text-decoration: none; font-weight: 500; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+.contactButton:hover { transform: scale(1.05); box-shadow: 0 4px 15px rgba(46, 204, 113, 0.4); }
+.container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+
+/* --- Mobile Optimization --- */
+@media (max-width: 768px) {
+    .header { padding: 1rem 0; }
+    .navLinks { display: none; }
+    .logo { font-size: 1.3rem; }
+    .contactButton { padding: 0.6rem 1rem; font-size: 0.9rem; }
+    .container { padding: 0 1rem; }
+}

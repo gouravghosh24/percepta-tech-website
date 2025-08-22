@@ -1,0 +1,71 @@
+/* styles/CaseStudy.module.css */
+.hero {
+    background-color: #111;
+    padding: 6rem 1.5rem 4rem 1.5rem;
+    text-align: center;
+}
+.category {
+    display: block;
+    font-size: 1rem;
+    color: var(--primary-blue);
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+.title {
+    font-size: 3.5rem;
+    color: var(--light-text);
+    max-width: 800px;
+    margin: 0 auto;
+}
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+}
+.imageWrapper {
+    margin-top: -4rem;
+    margin-bottom: 4rem;
+    border-radius: 8px;
+    box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5);
+    overflow: hidden;
+}
+.contentGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+}
+.sectionTitle {
+    font-size: 2rem;
+    border-bottom: 2px solid var(--primary-blue);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+}
+.section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--secondary-text);
+}
+.resultsList {
+    list-style: none;
+    padding: 0;
+}
+.resultsList li {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--secondary-text);
+    padding: 0.5rem 0 0.5rem 25px;
+    position: relative;
+}
+.resultsList li::before {
+    content: '✓';
+    color: var(--primary-blue);
+    position: absolute;
+    left: 0;
+}
+.resultsList li strong {
+    color: var(--light-text);
+}
+@media (max-width: 768px) {
+    .title { font-size: 2.5rem; }
+}

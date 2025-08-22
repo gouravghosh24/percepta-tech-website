@@ -1,0 +1,64 @@
+/* styles/ServicePage.module.css */
+.servicePage {
+    padding: 4rem 1.5rem;
+}
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+.title {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    background: -webkit-linear-gradient(45deg, var(--primary-blue), var(--accent-orange));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.subtitle {
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--secondary-text);
+    max-width: 700px;
+    margin: 0 auto 4rem auto;
+}
+.content h2 {
+    font-size: 2rem;
+    margin-top: 3rem;
+    border-left: 4px solid var(--primary-blue);
+    padding-left: 1rem;
+}
+.content p, .content ul {
+    line-height: 1.8;
+    font-size: 1.1rem;
+    color: var(--secondary-text);
+}
+.content ul {
+    list-style: none;
+    padding: 0;
+}
+.content li {
+    padding: 0.5rem 0;
+    position: relative;
+    padding-left: 25px;
+}
+.content li::before {
+    content: '✓';
+    color: var(--primary-blue);
+    position: absolute;
+    left: 0;
+}
+.ctaButton {
+    display: inline-block;
+    margin-top: 2rem;
+    background-color: var(--primary-blue);
+    color: white;
+    padding: 1rem 2.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: transform 0.3s ease;
+}
+.ctaButton:hover {
+    transform: scale(1.05);
+}

@@ -1,0 +1,36 @@
+/* styles/Home.module.css - FINAL */
+.servicesSection {
+    padding: 6rem 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: var(--background-color);
+}
+/* ... (rest of the styles are the same) ... */
+.container { max-width: 1200px; margin: 0 auto; }
+.sectionTitle { text-align: center; font-size: 2.5rem; margin-bottom: 1rem; color: var(--text-color); }
+.sectionSubtitle { text-align: center; font-size: 1.1rem; color: var(--secondary-text-color); max-width: 600px; margin: 0 auto 4rem auto; }
+.serviceCategory { margin-bottom: 6rem; }
+.serviceCategory:last-child { margin-bottom: 0; }
+.categoryTitle { font-size: 2.2rem; text-align: center; margin-bottom: 4rem; color: var(--text-color); border-bottom: 2px solid var(--primary-color); display: table; margin-left: auto; margin-right: auto; padding-bottom: 0.5rem; }
+.servicesList { display: flex; flex-direction: column; gap: 4rem; }
+.serviceRow { display: flex; align-items: center; gap: 3rem; }
+.serviceRow:nth-child(even) { flex-direction: row-reverse; }
+.iconContainer { flex-shrink: 0; width: 150px; height: 150px; background-color: var(--white-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 1px solid var(--border-color); box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); }
+.serviceIcon { font-size: 4rem; }
+.textContainer { flex-grow: 1; }
+.serviceRow:nth-child(even) .textContainer { text-align: right; display: flex; flex-direction: column; align-items: flex-end; }
+.serviceTitle { font-size: 2rem; margin: 0 0 1rem 0; color: var(--text-color); }
+.serviceDescription { font-size: 1.1rem; line-height: 1.8; color: var(--secondary-text-color); margin-bottom: 1.5rem; }
+.learnMoreLink { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1.5rem; border: 2px solid var(--primary-color); border-radius: 5px; color: var(--primary-color); text-decoration: none; font-weight: bold; font-size: 1rem; background-color: transparent; transition: all 0.3s ease; }
+.learnMoreLink:hover { background-color: var(--primary-color); color: var(--white-color); }
+
+/* --- Mobile Optimization --- */
+@media (max-width: 768px) {
+    .servicesSection { padding: 4rem 1rem; } /* <-- PADDING REDUCED */
+    .serviceRow, .serviceRow:nth-child(even) { flex-direction: column; text-align: center; gap: 1.5rem; }
+    .textContainer, .serviceRow:nth-child(even) .textContainer { align-items: center; text-align: center; }
+    .iconContainer { width: 120px; height: 120px; }
+    .serviceIcon { font-size: 3rem; }
+    .serviceTitle { font-size: 1.5rem; }
+    .sectionTitle, .categoryTitle { font-size: 2rem; }
+}

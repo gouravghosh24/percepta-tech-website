@@ -1,0 +1,86 @@
+/* styles/Process.module.css - DEFINITIVE BOX DESIGN VERSION */
+
+.processSection {
+    padding: 6rem 1.5rem;
+    background-color: var(--background-color); /* Use the main light grey background */
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.sectionTitle {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+.sectionSubtitle {
+    text-align: center;
+    font-size: 1.1rem;
+    color: var(--secondary-text-color);
+    max-width: 600px;
+    margin: 0 auto 4rem auto;
+}
+
+/* --- The Grid for the Boxes --- */
+.processGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns on desktop */
+    gap: 2rem;
+}
+
+/* --- A Single Box --- */
+.stepCard {
+    display: flex;
+    align-items: flex-start; /* Aligns the number and text to the top */
+    gap: 1.5rem;
+    background-color: var(--white-color);
+    padding: 2rem;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.stepCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.07);
+}
+
+.stepNumber {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    opacity: 0.6;
+    line-height: 1.2;
+}
+
+.stepContent {
+    flex: 1;
+}
+
+.stepTitle {
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+    font-size: 1.4rem;
+    color: var(--text-color);
+}
+
+.stepDescription {
+    margin: 0;
+    color: var(--secondary-text-color);
+    line-height: 1.7;
+}
+
+/* --- Mobile Optimization --- */
+@media (max-width: 900px) {
+    .processGrid {
+        grid-template-columns: 1fr; /* Stack into a single column */
+    }
+}
+@media (max-width: 768px) {
+    .processSection {
+        padding: 4rem 1rem;
+    }
+    .stepTitle {
+        font-size: 1.3rem;
+    }
+}

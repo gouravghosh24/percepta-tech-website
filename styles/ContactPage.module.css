@@ -1,0 +1,32 @@
+/* styles/ContactPage.module.css - Light Theme */
+.contactPage { padding: 4rem 1.5rem; }
+.container { max-width: 1200px; margin: 0 auto; }
+.header { text-align: center; margin-bottom: 4rem; }
+.title { font-size: 3rem; margin-bottom: 1rem; color: var(--text-color); }
+.subtitle { font-size: 1.2rem; color: var(--secondary-text-color); max-width: 700px; margin: 0 auto; }
+.mainGrid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; }
+.selectorTitle, .formTitle { font-size: 1.8rem; margin-bottom: 2rem; color: var(--text-color); }
+.serviceList { display: flex; flex-direction: column; gap: 1rem; }
+.serviceItem { display: flex; align-items: center; gap: 1rem; padding: 1rem; background-color: var(--white-color); border: 2px solid var(--border-color); border-radius: 8px; cursor: pointer; transition: all 0.2s ease; }
+.serviceItem:hover { border-color: rgba(46, 204, 113, 0.5); }
+.serviceItemSelected { border-color: var(--primary-color); background-color: rgba(46, 204, 113, 0.1); }
+.checkbox { width: 20px; height: 20px; border: 2px solid var(--border-color); border-radius: 4px; transition: all 0.2s ease; }
+.serviceItemSelected .checkbox { background-color: var(--primary-color); border-color: var(--primary-color); background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w.org/2000/svg'%3e%3cpath d='M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z'/%3e%3c/svg%3e"); }
+.serviceName { font-size: 1.1rem; color: var(--text-color); }
+.cartSummary { margin-top: 2rem; padding: 1.5rem; background-color: var(--white-color); border: 1px solid var(--border-color); border-radius: 8px; }
+.summaryTitle { margin: 0 0 1rem 0; color: var(--text-color); }
+.selectedList { list-style: none; padding: 0; margin: 0; }
+.selectedItem { padding: 0.5rem 0; border-bottom: 1px solid var(--border-color); color: var(--secondary-text-color); }
+.selectedItem:last-child { border-bottom: none; }
+.formGroup { margin-bottom: 1.5rem; }
+.formGroup label { display: block; margin-bottom: 0.5rem; font-weight: 500; color: var(--text-color); }
+.formGroup input, .formGroup textarea { width: 100%; padding: 0.8rem; background-color: var(--white-color); border: 1px solid var(--border-color); border-radius: 5px; color: var(--text-color); font-size: 1rem; }
+.submitButton { width: 100%; padding: 1rem; background-color: var(--primary-color); color: var(--white-color); border: none; border-radius: 5px; font-size: 1.1rem; font-weight: bold; cursor: pointer; transition: transform 0.2s ease; }
+.submitButton:hover { transform: scale(1.02); }
+.liveChatButton { position: fixed; bottom: 20px; right: 20px; background-color: var(--primary-color); color: var(--white-color); padding: 0.8rem 1.2rem; border-radius: 50px; display: flex; align-items: center; gap: 0.5rem; font-weight: bold; cursor: pointer; box-shadow: 0 5px 15px rgba(46, 204, 113, 0.4); transition: transform 0.2s ease; z-index: 1000; }
+.liveChatButton:hover { transform: scale(1.05); }
+.chatIcon { font-size: 1.5rem; }
+@media (max-width: 900px) {
+    .mainGrid { grid-template-columns: 1fr; }
+    .title { font-size: 2.5rem; }
+}
