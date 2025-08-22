@@ -1,25 +1,20 @@
-// components/Navbar.js
+// components/Navbar.js - CORRECTED
+import Link from 'next/link'; // <-- 1. IMPORT
 import styles from '../styles/Navbar.module.css';
 
 export default function Navbar() {
   return (
     <header className={styles.header}>
       <nav className={`${styles.nav} ${styles.container}`}>
-        {/* The logo link should always point to the homepage */}
-        <a href="/" className={styles.logo}>Percepta Tech</a>
-        
+        {/* --- 2. REPLACE <a> WITH <Link> --- */}
+        <Link href="/" className={styles.logo}>Percepta Tech</Link>
         <ul className={styles.navLinks}>
-          {/* These links now correctly point back to the homepage sections */}
-          <li><a href="/#services">Services</a></li>
-          <li><a href="/#work">Our Work</a></li>
-          
-          {/* These links correctly point to their dedicated pages */}
-          <li><a href="/about">About</a></li>
-          <li><a href="/blog">Blog</a></li>
+          <li><Link href="/#services">Services</Link></li>
+          <li><Link href="/#work">Our Work</Link></li>
+          <li><Link href="/about">About</Link></li>
+          <li><Link href="/blog">Blog</Link></li>
         </ul>
-        
-        {/* This will point to our future contact page */}
-        <a href="/contact" className={styles.contactButton}>Contact Us</a>
+        <Link href="/contact" className={styles.contactButton}>Contact Us</Link>
       </nav>
     </header>
   );
